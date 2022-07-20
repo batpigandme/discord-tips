@@ -28,6 +28,10 @@ $link-color: $primary !default;
 $link-shade-percentage: 20% !default;
 $link-hover-color: shift-color($link-color, $link-shade-percentage) !default;
 
+// Code styles
+// inline code text color
+$code-color: #844aa1 !default;
+
 /* -- scss:mixins --*/
 @mixin link-style {
   color: $link-color;

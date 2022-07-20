@@ -1,11 +1,12 @@
 ---
-title: "Discord Tips"
+title: "Discord Tips & FAQs"
 date: "last-modified"
 date-format: iso
 format:
   html: 
     toc: true
     toc-location: left
+    toc-depth: 2
     smooth-scroll: true
     anchor-sections: true
     theme: 
@@ -20,3 +21,20 @@ Before we get into tips and tricks of our own, here are some helpful links provi
 * [Beginner's guide to Discord](https://support.discord.com/hc/en-us/articles/360045138571-Beginner-s-Guide-to-Discord). 
 * [Discord basics](https://support.discord.com/hc/en-us/sections/360008206871-Discord-Basics).
 * [Discord accessibility](https://support.discord.com/hc/en-us/articles/1500010454681-Accessibility-Settings-Tab). 
+
+## Why can I only see one channel?
+
+Short answer: You have yet to agree to the Code of Conduct.
+
+### How to fix this
+
+Again, the short answer is to click the ✅ icon in the `#code-of-conduct` channel, but here is a breakdown of what this will look like.
+
+1. When you first join the rstudio::conf(2022) Discord, you'll only see one channel, and your name will be in white. So, basically, you're not fully activated.
+  ![](imgs/1-join-discord-pre-coc.png){fig-alt="Screenshot of rstudio::conf(2022) Discord upon first joining. The only channel in the left-hand sidebar is the code-of-conduct channel. The content of that channel shows text describing the code of conduct and indicating that you should click the checkbox to agree."}
+
+2. To agree to the Code of Conduct, you check the green checkbox icon as a reaction to the lone post in that channel.
+  ![](imgs/2-join-discord-where-to-click.png){fig-alt="The content of the code-of-conduct channel shows text describing the code of conduct and indicating that you should click the checkbox to agree. There is a zoomed in circle around the checkbox where you should click."}
+  
+3. Once you have agreed to the Code of Conduct, other channels will appear in the sidebar!
+  ![](imgs/3-join-discord-accepted-coc.png){fig-alt="With checkbox reaction clicked under code of conduct, the left-hand sidebar shows many channels."}
