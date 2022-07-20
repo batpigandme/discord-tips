@@ -1,0 +1,20 @@
+---
+title: "Discord Tips"
+format:
+  html: 
+    toc: true
+    toc-location: left
+    smooth-scroll: true
+    anchor-sections: true
+    theme: 
+      - cosmo
+      - custom.scss
+---
+
+## Discord's resources
+
+Before we get into tips and tricks of our own, here are some helpful links provided by [Discord Support](https://support.discord.com/) that are worth checking out if you're new to the platform:
+
+* [Beginner's guide to Discord](https://support.discord.com/hc/en-us/articles/360045138571-Beginner-s-Guide-to-Discord). 
+* [Discord basics](https://support.discord.com/hc/en-us/sections/360008206871-Discord-Basics).
+* [Discord accessibility](https://support.discord.com/hc/en-us/articles/1500010454681-Accessibility-Settings-Tab). 
