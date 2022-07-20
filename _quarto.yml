@@ -1,5 +1,15 @@
 project:
-  title: "discord-tips"
+  type: website
+  output-dir: _site
+
+website: 
+  title: "Discord Tips & FAQs"
+
+format:
+  html:
+    theme:
+      - cosmo
+      - custom.scss
 
 
 
