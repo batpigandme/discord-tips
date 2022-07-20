@@ -1,5 +1,7 @@
 ---
 title: "Discord Tips"
+date: "last-modified"
+date-format: iso
 format:
   html: 
     toc: true
@@ -11,7 +13,7 @@ format:
       - custom.scss
 ---
 
-## Discord's resources
+## Discord support resources
 
 Before we get into tips and tricks of our own, here are some helpful links provided by [Discord Support](https://support.discord.com/) that are worth checking out if you're new to the platform:
 

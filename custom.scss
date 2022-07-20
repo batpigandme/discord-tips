@@ -1,0 +1,57 @@
+/*-- scss:defaults --*/
+
+//== Typography
+//## Font, line-height, and color for body text, headings, and more.
+// Import Source Sans Pro
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,400&display=swap");
+$font-family-sans-serif: "Source Sans Pro", Roboto, Helvetica, Arial, sans-serif !default;
+
+$headings-font-weight: 600 !default;
+$headings-font-family: $font-family-sans-serif !default;
+
+// Colors
+$bs-body-color: rgb(55, 58, 60) !default;
+$white: #ffffff !default;
+$black: #000000 !default;
+$red: #dc3545 !default;
+$teal: #20c997 !default;
+$blue: #2780e3 !default;
+$gray-700: #495057 !default;
+// manually set primary
+$primary: #812929 !default;
+
+// Links
+//
+// Style anchor elements.
+// re-implement from BS so bold code hover works
+$link-color: $primary !default;
+$link-shade-percentage: 20% !default;
+$link-hover-color: shift-color($link-color, $link-shade-percentage) !default;
+
+/* -- scss:mixins --*/
+@mixin link-style {
+  color: $link-color;
+  text-decoration: none;
+  border-bottom: 1px solid $link-color;
+}
+
+@mixin link-hover-style {
+  color: $link-hover-color;
+  text-decoration: none;
+  border-bottom: 1px solid $link-hover-color;
+}
+
+/*-- scss:rules --*/
+
+// make view code dropdown body color
+details > summary {
+  color: $bs-body-color;
+}
+
+// figcaption color and font size
+.panel-caption,
+.figure-caption,
+figcaption {
+  color: $gray-700;
+  font-size: 0.925rem;
+}
