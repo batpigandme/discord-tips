@@ -72,6 +72,7 @@ ul.task-list{list-style: none;}
   <ul>
   <li><a href="#discord-support-resources" id="toc-discord-support-resources" class="nav-link active" data-scroll-target="#discord-support-resources">Discord support resources</a></li>
   <li><a href="#why-can-i-only-see-one-channel" id="toc-why-can-i-only-see-one-channel" class="nav-link" data-scroll-target="#why-can-i-only-see-one-channel">Why can I only see one channel?</a></li>
+  <li><a href="#how-do-i-disconnect-from-a-voice-channel" id="toc-how-do-i-disconnect-from-a-voice-channel" class="nav-link" data-scroll-target="#how-do-i-disconnect-from-a-voice-channel">How do I disconnect from a voice channel?</a></li>
   </ul>
 </nav>
 </nav>
@@ -120,20 +121,36 @@ ul.task-list{list-style: none;}
 <p>Again, the short answer is to click the ✅ icon in the <code>#code-of-conduct</code> channel, but here is a breakdown of what this will look like.</p>
 <div class="il">
 <ol type="1">
-<li><p>When you first join the rstudio::conf(2022) Discord, you’ll only see one channel, and your name will be in white. So, basically, you’re not fully activated. <img src="imgs/1-join-discord-pre-coc.png" class="img-fluid" alt="Screenshot of rstudio::conf(2022) Discord upon first joining. The only channel in the left-hand sidebar is the code-of-conduct channel. The content of that channel shows text describing the code of conduct and indicating that you should click the checkbox to agree."></p></li>
-<li><p>To agree to the Code of Conduct, you check the green checkbox icon as a reaction to the lone post in that channel. <img src="imgs/2-join-discord-where-to-click.png" class="img-fluid" alt="The content of the code-of-conduct channel shows text describing the code of conduct and indicating that you should click the checkbox to agree. There is a zoomed in circle around the checkbox where you should click."></p></li>
-<li><p>Once you have agreed to the Code of Conduct, other channels will appear in the sidebar! <img src="imgs/3-join-discord-accepted-coc.png" class="img-fluid" alt="With checkbox reaction clicked under code of conduct, the left-hand sidebar shows many channels."></p></li>
+<li><p>When you first join the rstudio::conf(2022) Discord, you’ll only see one channel, and your name will be in white. So, basically, you’re not fully activated.</p>
+<p><img src="imgs/1-join-discord-pre-coc.png" class="img-fluid" alt="Screenshot of rstudio::conf(2022) Discord upon first joining. The only channel in the left-hand sidebar is the code-of-conduct channel. The content of that channel shows text describing the code of conduct and indicating that you should click the checkbox to agree."></p></li>
+<li><p>To agree to the Code of Conduct, you check the green checkbox icon as a reaction to the lone post in that channel.</p>
+<p><img src="imgs/2-join-discord-where-to-click.png" class="img-fluid" alt="The content of the code-of-conduct channel shows text describing the code of conduct and indicating that you should click the checkbox to agree. There is a zoomed in circle around the checkbox where you should click."></p></li>
+<li><p>Once you have agreed to the Code of Conduct, other channels will appear in the sidebar!</p>
+<p><img src="imgs/3-join-discord-accepted-coc.png" class="img-fluid" alt="With checkbox reaction clicked under code of conduct, the left-hand sidebar shows many channels."></p></li>
 </ol>
 </div>
 <details>
 <summary>
 Expand to view as animation
 </summary>
-<img src="imgs/discord-accept-coc.webp" class="img-fluid" alt="Discord site upon first joining shows only one channel. Mouse is moved to check box under code of conduct. Once box is checked, more channels appear.">
+<p><img src="imgs/discord-accept-coc.webp" alt="Discord site upon first joining shows only one channel. Mouse is moved to check box under code of conduct. Once box is checked, more channels appear." class="img-fluid"></p>
 </details>
-
-
 </section>
+</section>
+<section id="how-do-i-disconnect-from-a-voice-channel" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-i-disconnect-from-a-voice-channel">How do I disconnect from a voice channel?</h2>
+<p>You’ve connected to a voice channel, and are ready to take your leave. But how?!</p>
+<div class="il">
+<ol type="1">
+<li><p>Towards the bottom of the sidebar where the channels names are shown (just above your user name and settings), there’s a section showing your voice connection. Go to it.</p>
+<p><img src="imgs/discord-voice-disconnect-1.png" class="img-fluid" alt="Bottom of Discord's left-hand sidebar with voice-connection box between the list of channels and the user settings options. The voice-connection section shows Voice Connected, the name of the channel, and, on the right, a call-connection icon."></p></li>
+<li><p>On the right-hand side of that box there is a call-connection icon (a phone with an ‘x’ above it). Click on the call-connection icon to disconnect.</p>
+<p><img src="imgs/discord-voice-disconnect-3.png" class="img-fluid" alt="Voice connection box with call-connection button (a phone with an x above it) zoomed in. The cursor is hovering over the call-connection button, and the tooltip reads Disconnect."></p></li>
+</ol>
+</div>
+<p>For a more detailed breakdown with device-specific screenshots, check out <a href="https://www.alphr.com/leave-voice-channel/">How to Leave a Voice Channel in Discord</a>.</p>
+
+
 </section>
 
 </main> <!-- /main -->
@@ -232,6 +249,20 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return popup.innerHTML;
     });
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp(/https:\/\/quartopub\.org\/sites\/mara\/discord-tips-faqs/);
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // default icon
+          link.classList.add("external");
+      }
+    }
 });
 </script>
 </div> <!-- /content -->

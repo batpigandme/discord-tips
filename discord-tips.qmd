@@ -9,15 +9,16 @@ format:
     toc-depth: 2
     smooth-scroll: true
     anchor-sections: true
+    link-external-icon: true
 ---
 
 ## Discord support resources
 
 Before we get into tips and tricks of our own, here are some helpful links provided by [Discord Support](https://support.discord.com/) that are worth checking out if you're new to the platform:
 
-* [Beginner's guide to Discord](https://support.discord.com/hc/en-us/articles/360045138571-Beginner-s-Guide-to-Discord). 
-* [Discord basics](https://support.discord.com/hc/en-us/sections/360008206871-Discord-Basics).
-* [Discord accessibility](https://support.discord.com/hc/en-us/articles/1500010454681-Accessibility-Settings-Tab). 
+-   [Beginner's guide to Discord](https://support.discord.com/hc/en-us/articles/360045138571-Beginner-s-Guide-to-Discord).
+-   [Discord basics](https://support.discord.com/hc/en-us/sections/360008206871-Discord-Basics).
+-   [Discord accessibility](https://support.discord.com/hc/en-us/articles/1500010454681-Accessibility-Settings-Tab).
 
 ## Why can I only see one channel?
 
@@ -27,19 +28,40 @@ Short answer: You have yet to agree to the Code of Conduct.
 
 Again, the short answer is to click the ✅ icon in the `#code-of-conduct` channel, but here is a breakdown of what this will look like.
 
-<div class="il">
-1. When you first join the rstudio::conf(2022) Discord, you'll only see one channel, and your name will be in white. So, basically, you're not fully activated.
-  ![](imgs/1-join-discord-pre-coc.png){fig-alt="Screenshot of rstudio::conf(2022) Discord upon first joining. The only channel in the left-hand sidebar is the code-of-conduct channel. The content of that channel shows text describing the code of conduct and indicating that you should click the checkbox to agree."}
+::: il
+1.  When you first join the rstudio::conf(2022) Discord, you'll only see one channel, and your name will be in white. So, basically, you're not fully activated.
 
-2. To agree to the Code of Conduct, you check the green checkbox icon as a reaction to the lone post in that channel.
-  ![](imgs/2-join-discord-where-to-click.png){fig-alt="The content of the code-of-conduct channel shows text describing the code of conduct and indicating that you should click the checkbox to agree. There is a zoomed in circle around the checkbox where you should click."}
-  
-3. Once you have agreed to the Code of Conduct, other channels will appear in the sidebar!
-  ![](imgs/3-join-discord-accepted-coc.png){fig-alt="With checkbox reaction clicked under code of conduct, the left-hand sidebar shows many channels."}
+    ![](imgs/1-join-discord-pre-coc.png){fig-alt="Screenshot of rstudio::conf(2022) Discord upon first joining. The only channel in the left-hand sidebar is the code-of-conduct channel. The content of that channel shows text describing the code of conduct and indicating that you should click the checkbox to agree."}
 
-</div>
+2.  To agree to the Code of Conduct, you check the green checkbox icon as a reaction to the lone post in that channel.
+
+    ![](imgs/2-join-discord-where-to-click.png){fig-alt="The content of the code-of-conduct channel shows text describing the code of conduct and indicating that you should click the checkbox to agree. There is a zoomed in circle around the checkbox where you should click."}
+
+3.  Once you have agreed to the Code of Conduct, other channels will appear in the sidebar!
+
+    ![](imgs/3-join-discord-accepted-coc.png){fig-alt="With checkbox reaction clicked under code of conduct, the left-hand sidebar shows many channels."}
+:::
 
 <details>
-    <summary>Expand to view as animation</summary>
-    <img src="imgs/discord-accept-coc.webp" class="img-fluid" alt="Discord site upon first joining shows only one channel. Mouse is moved to check box under code of conduct. Once box is checked, more channels appear.">
+
+<summary>Expand to view as animation</summary>
+
+<img src="imgs/discord-accept-coc.webp" alt="Discord site upon first joining shows only one channel. Mouse is moved to check box under code of conduct. Once box is checked, more channels appear." class="img-fluid"/>
+
 </details>
+
+## How do I disconnect from a voice channel?
+
+You've connected to a voice channel, and are ready to take your leave. But how?!
+
+::: il
+1.  Towards the bottom of the sidebar where the channels names are shown (just above your user name and settings), there's a section showing your voice connection. Go to it.
+
+    ![](imgs/discord-voice-disconnect-1.png){fig-alt="Bottom of Discord's left-hand sidebar with voice-connection box between the list of channels and the user settings options. The voice-connection section shows Voice Connected, the name of the channel, and, on the right, a call-connection icon."}
+
+2.  On the right-hand side of that box there is a call-connection icon (a phone with an 'x' above it). Click on the call-connection icon to disconnect.
+
+    ![](imgs/discord-voice-disconnect-3.png){fig-alt="Voice connection box with call-connection button (a phone with an x above it) zoomed in. The cursor is hovering over the call-connection button, and the tooltip reads Disconnect."}
+:::
+
+For a more detailed breakdown with device-specific screenshots, check out [How to Leave a Voice Channel in Discord](https://www.alphr.com/leave-voice-channel/).

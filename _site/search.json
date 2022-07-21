@@ -11,6 +11,13 @@
     "href": "discord-tips.html#why-can-i-only-see-one-channel",
     "title": "Discord Tips & FAQs",
     "section": "Why can I only see one channel?",
-    "text": "Why can I only see one channel?\nShort answer: You have yet to agree to the Code of Conduct.\n\nHow to fix this\nAgain, the short answer is to click the ✅ icon in the #code-of-conduct channel, but here is a breakdown of what this will look like.\n\n\nWhen you first join the rstudio::conf(2022) Discord, you’ll only see one channel, and your name will be in white. So, basically, you’re not fully activated. \nTo agree to the Code of Conduct, you check the green checkbox icon as a reaction to the lone post in that channel. \nOnce you have agreed to the Code of Conduct, other channels will appear in the sidebar! \n\n\n\n\nExpand to view as animation"
+    "text": "Why can I only see one channel?\nShort answer: You have yet to agree to the Code of Conduct.\n\nHow to fix this\nAgain, the short answer is to click the ✅ icon in the #code-of-conduct channel, but here is a breakdown of what this will look like.\n\n\nWhen you first join the rstudio::conf(2022) Discord, you’ll only see one channel, and your name will be in white. So, basically, you’re not fully activated.\n\nTo agree to the Code of Conduct, you check the green checkbox icon as a reaction to the lone post in that channel.\n\nOnce you have agreed to the Code of Conduct, other channels will appear in the sidebar!\n\n\n\n\n\nExpand to view as animation"
+  },
+  {
+    "objectID": "discord-tips.html#how-do-i-disconnect-from-a-voice-channel",
+    "href": "discord-tips.html#how-do-i-disconnect-from-a-voice-channel",
+    "title": "Discord Tips & FAQs",
+    "section": "How do I disconnect from a voice channel?",
+    "text": "How do I disconnect from a voice channel?\nYou’ve connected to a voice channel, and are ready to take your leave. But how?!\n\n\nTowards the bottom of the sidebar where the channels names are shown (just above your user name and settings), there’s a section showing your voice connection. Go to it.\n\nOn the right-hand side of that box there is a call-connection icon (a phone with an ‘x’ above it). Click on the call-connection icon to disconnect.\n\n\n\nFor a more detailed breakdown with device-specific screenshots, check out How to Leave a Voice Channel in Discord."
   }
 ]
