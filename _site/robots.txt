@@ -1,1 +1,1 @@
-Sitemap: https://f11de5ae-82ac-4a7a-8fc9-5cbe8ff2a2b5.netlify.app/sitemap.xml
+Sitemap: https://quartopub.org/sites/mara/discord-tips-faqs/sitemap.xml
