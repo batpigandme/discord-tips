@@ -59,3 +59,31 @@ figcaption {
   color: $gray-700;
   font-size: 0.925rem;
 }
+
+// special counter for concourse-index
+// use class .il (index list) for surrounding div
+.il ol {
+  counter-reset: foobar;
+}
+
+.il ol li {
+  counter-increment: foobar;
+  list-style-type: decimal;
+  margin-left: 2.5rem;
+  list-style: none;
+}
+
+.il ol li::before {
+  content: counter(foobar);
+  font-family: "concourse-t3-index";
+  font-size: 1.2em;
+  position: absolute;
+  margin-left: -2.2rem;
+}
+
+// Concourse typefaces are (c) Matthew Butterick.
+// Used under license.
+// These fonts are NOT free to use or distribute.
+
+/* import base64 concourse-index */
+@import "fonts/concourse-index.css";

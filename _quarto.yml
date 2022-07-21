@@ -10,6 +10,7 @@ format:
     theme:
       - cosmo
       - custom.scss
+    css: [fonts/concourse-index.css]
 
 
 
