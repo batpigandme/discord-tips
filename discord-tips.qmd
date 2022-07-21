@@ -9,9 +9,6 @@ format:
     toc-depth: 2
     smooth-scroll: true
     anchor-sections: true
-    theme: 
-      - cosmo
-      - custom.scss
 ---
 
 ## Discord support resources
@@ -30,6 +27,7 @@ Short answer: You have yet to agree to the Code of Conduct.
 
 Again, the short answer is to click the ✅ icon in the `#code-of-conduct` channel, but here is a breakdown of what this will look like.
 
+<div class="il">
 1. When you first join the rstudio::conf(2022) Discord, you'll only see one channel, and your name will be in white. So, basically, you're not fully activated.
   ![](imgs/1-join-discord-pre-coc.png){fig-alt="Screenshot of rstudio::conf(2022) Discord upon first joining. The only channel in the left-hand sidebar is the code-of-conduct channel. The content of that channel shows text describing the code of conduct and indicating that you should click the checkbox to agree."}
 
@@ -38,3 +36,10 @@ Again, the short answer is to click the ✅ icon in the `#code-of-conduct` chann
   
 3. Once you have agreed to the Code of Conduct, other channels will appear in the sidebar!
   ![](imgs/3-join-discord-accepted-coc.png){fig-alt="With checkbox reaction clicked under code of conduct, the left-hand sidebar shows many channels."}
+
+</div>
+
+<details>
+    <summary>Expand to view as animation</summary>
+    <img src="imgs/discord-accept-coc.webp" class="img-fluid" alt="Discord site upon first joining shows only one channel. Mouse is moved to check box under code of conduct. Once box is checked, more channels appear.">
+</details>

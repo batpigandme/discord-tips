@@ -81,6 +81,11 @@ figcaption {
   margin-left: -2.2rem;
 }
 
+// Make sidebar TOC items heavier
+.sidebar nav[role="doc-toc"] ul {
+  font-weight: 400;
+}
+
 // Concourse typefaces are (c) Matthew Butterick.
 // Used under license.
 // These fonts are NOT free to use or distribute.
