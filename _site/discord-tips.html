@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2022-07-21">
+<meta name="dcterms.date" content="2022-07-22">
 
 <title>Discord Tips &amp; FAQs</title>
 <style>
@@ -55,6 +55,22 @@ ul.task-list{list-style: none;}
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+<style>.color-preview {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  margin: 0 0.33em;
+  vertical-align: middle;
+  transition: transform 100ms ease-in-out;
+}
+
+.color-preview:hover {
+  cursor: pointer;
+  transform: scale(2);
+  transform-origin: 50% 50%;
+}</style>
+
 
 <link rel="stylesheet" href="fonts/concourse-index.css">
 </head>
@@ -73,6 +89,7 @@ ul.task-list{list-style: none;}
   <li><a href="#discord-support-resources" id="toc-discord-support-resources" class="nav-link active" data-scroll-target="#discord-support-resources">Discord support resources</a></li>
   <li><a href="#why-can-i-only-see-one-channel" id="toc-why-can-i-only-see-one-channel" class="nav-link" data-scroll-target="#why-can-i-only-see-one-channel">Why can I only see one channel?</a></li>
   <li><a href="#how-do-i-disconnect-from-a-voice-channel" id="toc-how-do-i-disconnect-from-a-voice-channel" class="nav-link" data-scroll-target="#how-do-i-disconnect-from-a-voice-channel">How do I disconnect from a voice channel?</a></li>
+  <li><a href="#why-are-peoples-names-different-colors" id="toc-why-are-peoples-names-different-colors" class="nav-link" data-scroll-target="#why-are-peoples-names-different-colors">Why are people’s names different colors?</a></li>
   </ul>
 </nav>
 </nav>
@@ -95,7 +112,7 @@ ul.task-list{list-style: none;}
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">2022-07-21</p>
+      <p class="date">2022-07-22</p>
     </div>
   </div>
     
@@ -118,7 +135,7 @@ ul.task-list{list-style: none;}
 <p>Short answer: You have yet to agree to the Code of Conduct.</p>
 <section id="how-to-fix-this" class="level3">
 <h3 class="anchored" data-anchor-id="how-to-fix-this">How to fix this</h3>
-<p>Again, the short answer is to click the ✅ icon in the <code>#code-of-conduct</code> channel, but here is a breakdown of what this will look like.</p>
+<p>Again, the short answer is to click the ✅ icon in the <code>#code-of-conduct</code> channel (thereby accepting the Code of Conduct). But, here is a step-by-step breakdown of what that will look like:</p>
 <div class="il">
 <ol type="1">
 <li><p>When you first join the rstudio::conf(2022) Discord, you’ll only see one channel, and your name will be in white. So, basically, you’re not fully activated.</p>
@@ -149,6 +166,30 @@ Expand to view as animation
 </ol>
 </div>
 <p>For a more detailed breakdown with device-specific screenshots, check out <a href="https://www.alphr.com/leave-voice-channel/">How to Leave a Voice Channel in Discord</a>.</p>
+</section>
+<section id="why-are-peoples-names-different-colors" class="level2">
+<h2 class="anchored" data-anchor-id="why-are-peoples-names-different-colors">Why are people’s names different colors?</h2>
+<p>The color of a person’s name indicated their highest <strong>Role</strong> on the Discord server’s role list.</p>
+<div class="cell">
+<div class="cell-output-display">
+<ul>
+<li><span class="color-preview" style="background-color: #9b59b6 ; border: .5px solid black"></span>admin
+</li>
+<li><span class="color-preview" style="background-color: #e91e63 ; border: .5px solid black"></span>moderator
+</li>
+<li><span class="color-preview" style="background-color: #e74c3c ; border: .5px solid black"></span>instructor or TA
+</li>
+<li><span class="color-preview" style="background-color: #f1c40f ; border: .5px solid black"></span>staff
+</li>
+<li><span class="color-preview" style="background-color: #2ecc71 ; border: .5px solid black"></span>workshop attendee
+</li>
+<li><span class="color-preview" style="background-color: #3498db ; border: .5px solid black"></span>community member
+</li>
+<li><span class="color-preview" style="background-color: #ffffff ; border: .5px solid black"></span>has not accepted code of conduct yet
+</li>
+</ul>
+</div>
+</div>
 
 
 </section>

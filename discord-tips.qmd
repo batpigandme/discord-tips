@@ -26,7 +26,7 @@ Short answer: You have yet to agree to the Code of Conduct.
 
 ### How to fix this
 
-Again, the short answer is to click the ✅ icon in the `#code-of-conduct` channel, but here is a breakdown of what this will look like.
+Again, the short answer is to click the ✅ icon in the `#code-of-conduct` channel (thereby accepting the Code of Conduct). But, here is a step-by-step breakdown of what that will look like:
 
 ::: il
 1.  When you first join the rstudio::conf(2022) Discord, you'll only see one channel, and your name will be in white. So, basically, you're not fully activated.
@@ -65,3 +65,61 @@ You've connected to a voice channel, and are ready to take your leave. But how?!
 :::
 
 For a more detailed breakdown with device-specific screenshots, check out [How to Leave a Voice Channel in Discord](https://www.alphr.com/leave-voice-channel/).
+
+## Why are people's names different colors?
+
+The color of a person's name indicated their highest **Role** on the Discord server's role list.
+
+```{r}
+#| label: color-preview
+#| echo: false
+
+colors <- list("#9b59b6", "#e91e63", "#e74c3c", "#f1c40f", "#2ecc71", "#3498db", "#ffffff")
+roles <- list("admin", "moderator", "instructor or TA", "staff", "workshop attendee", "community member", "has not accepted code of conduct yet")
+
+
+# src: https://www.garrickadenbuie.com/blog/little-inline-color-boxes/ by Garrick Aden Buie
+
+color_preview <- function(color) {
+  htmltools::tagList(
+    htmltools::span(
+      class = "color-preview",
+      style = paste("background-color:", color, "; border: .5px solid black"),
+      .noWS = "outside"
+    ),
+    color_preview_dep()
+  )
+}
+
+color_preview_dep <- function() {
+  htmltools::htmlDependency(
+    name = "color_preview",
+    version = "0.0.1",
+    src = ".",
+    all_files = FALSE,
+    head = "
+<style>.color-preview {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  margin: 0 0.33em;
+  vertical-align: middle;
+  transition: transform 100ms ease-in-out;
+}
+
+.color-preview:hover {
+  cursor: pointer;
+  transform: scale(2);
+  transform-origin: 50% 50%;
+}</style>"
+  )
+}
+
+items <- purrr::map2(.x = colors, .y = roles, function(.x, .y) {
+  htmltools::tags$li(color_preview(.x), .y)
+})
+htmltools::tags$ul(items)
+```
+
+
