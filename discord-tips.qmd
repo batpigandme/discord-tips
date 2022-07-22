@@ -10,6 +10,7 @@ format:
     smooth-scroll: true
     anchor-sections: true
     link-external-icon: true
+    link-external-filter: '^(?:http:|https:)\/\/mara\.quarto\.pub\/'
 ---
 
 ## Discord support resources
