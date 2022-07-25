@@ -69,6 +69,14 @@ You've connected to a voice channel, and are ready to take your leave. But how?!
 
 For a more detailed breakdown with device-specific screenshots, check out [How to Leave a Voice Channel in Discord](https://www.alphr.com/leave-voice-channel/).
 
+### Bonus tip: Mute yourself
+
+Want to make sure your conversation with your cat isn't overheard when you're in a voice channel? Mute yourself! You can toggle mute by clicking the microphone icon next to your name in the bottom of the left-hand sidebar, or by using the default keyboard shortcut: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>M</kbd>.
+
+![](imgs/discord-mute.png){fig-alt="User icon and name left with microphone icon next to it crossed out and Unmute written in the tooltip above it."}
+
+Just like with Zoom or \*insert your fave video-chat platform here\*, voice channels on Discord work better when folks who aren't speaking are muted, anyhow!
+
 ## How do I change my nickname on the server?
 
 Already a Discord user and want to use a handle (e.g. your real name) different to the one you use for your other Discord servers? You can change your [Server Nickname](https://support.discord.com/hc/en-us/articles/219070107-Server-Nicknames) in the rstudio::conf Discord by going to **Edit Server Profile**.
